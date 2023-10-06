@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Title</title>
+    <style type="text/css">
+     .pink{
+         background-color: pink;
+     }
+    </style>
+</head>
+
+<body>
+<button class="pink">按钮一</button>
+<button>二</button>
+<button>三</button>
+<button>四</button>
+<script type="application/javascript">
+    let bts =document.querySelectorAll('button')
+    for (let i = 0; i < bts.length; i++) {
+        bts[i].addEventListener('click',function (){
+            document.querySelector('.pink').className=''
+        })
+    }
+</script>
+</body>
+</html>

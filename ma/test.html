@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Title</title>
+</head>
+<style type="text/css">
+    .pink{
+        background-color: pink;
+    }
+</style>
+<body>
+<button class="pink">one</button>
+<button>two</button>
+<button>s</button>
+<button>f</button>
+<script type="application/javascript">
+    let bts =document.querySelectorAll('button')
+    for (let i = 0; i < bts.length; i++) {
+        bts[i].addEventListener('click',function (){
+            document.querySelector('.pink').className=''
+            this.className = 'pink'
+        })
+    }
+</script>
+</body>
+</html>
